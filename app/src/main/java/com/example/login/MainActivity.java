@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mLogin;
 
     private TextView mNoOfAttempt;
+    private TextView mCreateAccount;
+    private TextView mForgotPassword;
 
     private int mCounter = 5;
 
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         mLogin = findViewById(R.id.btn_login);
 
         mNoOfAttempt = findViewById(R.id.tvInfo);
+        mCreateAccount = findViewById(R.id.registerText);
+        mForgotPassword = findViewById(R.id.forgotPassword);
+        
         mNoOfAttempt.setText("No of Attempts Remaining is : 5");
 
         mLogin.setOnClickListener(new View.OnClickListener() {
